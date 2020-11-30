@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 縦並び */
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+    width: 400px;
+    max-width: 100%;
+}
+
+.header {
+    border-radius: 4px 4px 0 0;
+    background-color: #f857a6;
+    border-bottom: 1px black;
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control.succes input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control.succes .fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+} 
+
+.form-control.error .fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+} 
+
+.form-control.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control i{
+    position: absolute;
+    top: 39px;
+    right: 10px;
+    /* 見えていない */
+    visibility: hidden;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.form button {
+    background-color: #f857a6;
+    border: 2px solid #f857a6;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+}
